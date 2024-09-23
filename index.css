@@ -1,3 +1,19 @@
 .intro, .formulaire { 
     background-color: #1f2039;
+    color: white;
+}
+
+h1,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #a5b4fc;
+}
+
+em {
+    font-style: normal;
+    color: #a5b4fc;
+}
+
+.infos {
+    /* Ici trouver comment rendre les input 'white' à la place du dégradé actuel créer dans le fichier 'style.css' */
 }

@@ -1,0 +1,14 @@
+body {
+    font-family: "Manrope", system-ui;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    color: white;
+    background: linear-gradient(0deg, #8e86b5, #acaeed);
+    border-radius: 30px;
+}

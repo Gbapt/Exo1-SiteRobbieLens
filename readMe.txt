@@ -16,6 +16,7 @@ les couleurs:
 AIDE:
 - FAVICON
     https://icon-icons.com/fr/
+    https://fonts.google.com/icons
 
 - POLICES
     https://fonts.google.com/

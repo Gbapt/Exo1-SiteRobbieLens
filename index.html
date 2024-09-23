@@ -7,20 +7,23 @@
     <link rel="icon" href="/images/appareilPhoto.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
             <a href="index.html"><img src="/images/logo.png" alt="Robbie Lens"></a>
-            <a href="index.html">Accueil</a>
-            <a href="a-propos.html">À propos</a>
-            <a href="portfolio.html">Portfolio</a>
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="portfolio.html">Portfolio</a>
         </div>
     </header>
     <section>
         <div class="intro">
             <h1>Robbie Lens Photographie</h1>
-            <p>Où professionalisme s’allie avec passion. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.</p>
+            <p>Où <em>professionalisme</em> s’allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion qui m’anime : capturer l’essence de chaque instant.</p>
             <input type="button" value= "Un projet ? Écrivez-moi">
             <img src="/images/robbie-lens.png" alt="Autoportrait">
         </div>
@@ -36,13 +39,16 @@
         <div class="formulaire">
             <h3>Parlons de votre projet</h3>
             <form action="" method="get">
-                <div>
+                <div class="infos">
                     <label for="name">nom</label>
-                    <input type="text" name="name" id="name" required />
+                    <input type="text" name="name" id="name" required placeholder="Mr Doe"/>
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" required placeholder="johndoe@mail.fr"/>
                 </div>
                 <div>
-                    <label for="email">email</label>
-                    <input type="email" name="email" id="email" required />
+                    <label for="message">message</label><br>
+                    <textarea type="message" name="message" id="message" required placeholder="Écrivez votre message ici"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Envoyer">
