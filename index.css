@@ -14,6 +14,10 @@ em {
     color: #a5b4fc;
 }
 
-.infos {
-    /* Ici trouver comment rendre les input 'white' à la place du dégradé actuel créer dans le fichier 'style.css' */
+.infos input {
+    border: none;
+    color: white;
+    background: white;
+    border-radius: 30px;
 }
+

@@ -8,3 +8,16 @@ h1 {
     color: #a5b4fc;
 }
 
+ul {
+    border-right: 1px solid #a5b4fc;
+    border-bottom: 1px solid #a5b4fc;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #a5b4fc;
+}
+

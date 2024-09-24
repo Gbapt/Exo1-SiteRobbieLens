@@ -4,11 +4,22 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 input {
     border: none;
     color: white;
-    background: linear-gradient(0deg, #8e86b5, #acaeed);
+    background: linear-gradient(#8e86b5, #acaeed);
     border-radius: 30px;
 }
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
