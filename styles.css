@@ -2,24 +2,32 @@ body {
     font-family: "Manrope", system-ui;
 }
 
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 70px 15px 70px;
+}
+
+.en-tete a,
+.pied-de-page a {
+    margin: 1em;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-input {
+.boutton {
     border: none;
     color: white;
     background: linear-gradient(#8e86b5, #acaeed);
     border-radius: 30px;
 }
 
-header,
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 
 
