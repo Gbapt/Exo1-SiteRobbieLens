@@ -1,5 +1,12 @@
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+body {
     font-family: "Manrope", system-ui;
+    font-size: 1em;
 }
 
 header,
@@ -7,12 +14,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 70px 15px 70px;
+    padding: 1em 1.3em 1em 4.3em;
+    margin: 0.3em;
 }
 
 .en-tete a,
 .pied-de-page a {
     margin: 1em;
+}
+
+h1 {
+    font-size: 3.5em;
 }
 
 a {
@@ -25,6 +37,8 @@ a {
     color: white;
     background: linear-gradient(#8e86b5, #acaeed);
     border-radius: 30px;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
 }
 
 

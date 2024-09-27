@@ -5,11 +5,19 @@
 
 .intro {
     display: flex;
-    padding: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4em 25em 4em 25em;
 }
 
 .intro div {
-    flex-direction: column;
+    display: block;
+    padding-right: 5em;
+}
+
+.intro p {
+    margin-bottom: 3em;
 }
 
 h1,
@@ -18,7 +26,9 @@ h3 {
     color: #a5b4fc;
 }
 
-div p
+h2 {
+    margin: 3em;
+}
 
 em {
     font-style: normal;
@@ -29,17 +39,52 @@ em {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5em;
+}
+.extrait img {
+    padding: 0.4em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.formulaire {
+    display: grid;
+    justify-items: center
+}
+
+form {
+    width: 53%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nom1 mail1"
+    "nom2 mail2"
+    "message1 message1"
+    "message2 message2"
+}
+
+#name {
+    grid-area: nom2;
+}
+
+#email {
+    grid-area: mail2;
+}
+
+#message {
+    grid-area: message2;
+}
+
+.envoyer {
+    margin: 1.5em;
 }
 
 .infos input {
     border: none;
     color: white;
     background: white;
-    border-radius: 30px;
-}
-
-.formulaire {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 2em;
 }
