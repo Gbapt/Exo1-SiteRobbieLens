@@ -64,6 +64,7 @@ form {
     "nom2 mail2"
     "message1 message1"
     "message2 message2"
+    "envoyer1 envoyer1"
 }
 
 #name {
@@ -79,6 +80,9 @@ form {
 }
 
 .envoyer {
+    display: flex;
+    justify-content: space-around;
+    grid-area: envoyer1;
     margin: 1.5em;
 }
 
