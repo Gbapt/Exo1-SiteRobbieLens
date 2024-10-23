@@ -52,17 +52,31 @@ caption {
 
 table {
     border-collapse: collapse;
+    table-layout: fixed; /* Empêche la largeur des colonnes de changer dynamiquement */
+    width: 91.5%; /* Assure que le tableau prend toute la largeur disponible */
 }
 
-td, th {
+th, td {
     border: 1px solid #a5b4fc;
     text-align: center;
 }
 
 th {
-    padding: 1rem 16rem;
+    padding: 1rem;
 }
 
 td {
-    padding: 5rem 7rem
+    padding: 5rem;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 44%; /* Première colonne plus large */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 26%; /* Deuxième et troisième colonnes plus étroites */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* Deuxième et troisième colonnes plus étroites */
 }
