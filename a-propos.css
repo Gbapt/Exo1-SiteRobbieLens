@@ -7,21 +7,47 @@ section {
     color: white;
 }
 
-section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 h1 {
     font-family: "Montserrat", sans-serif;
     color: #a5b4fc;
+    margin-bottom: 0;
+    padding-top: 2rem;
 }
 
 .a-propos-entete {
+    display: flex;
+    flex-direction: column;
     max-width: 60rem;
+    padding: 2rem 3rem 3rem 3rem;
+    margin-bottom: 4rem;
     border-right: 1px solid #a5b4fc;
     border-bottom: 1px solid #a5b4fc;
+}
+
+.a-propos-entete p {
+    font-size: 1.1rem;
+    max-width: 55rem;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 2.3rem;
+}
+
+ul {
+    font-size: 1.1rem;
+}
+
+.boutton {
+    font-size: 0.95rem;
+    padding: 1.4rem 1.6rem;
+}
+
+caption {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 table {
@@ -30,6 +56,7 @@ table {
 
 td, th {
     border: 1px solid #a5b4fc;
+    text-align: center;
 }
 
 th {
@@ -37,5 +64,5 @@ th {
 }
 
 td {
-    padding: 4rem;
+    padding: 5rem 7rem
 }
