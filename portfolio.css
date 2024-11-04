@@ -1,8 +1,11 @@
 h1 {
-    background-color: #1f2039;
-    color:#a5b4fc;
-    margin: 0;
+    background: var(--color1);
+    color:var(--color2);
     padding: 4.7rem 5rem;
+}
+
+.tirage {
+    padding: 0 5rem;
 }
 
 h2, h3 {
@@ -10,24 +13,54 @@ h2, h3 {
 }
 
 h2 {
-    padding: 3.3rem 0.5rem;
+    padding: 5rem 0rem;
 }
 
 h3 {
-    padding-left: 0.5rem;
-    padding-bottom: 2rem;
-    margin-top: -0.4rem;
+    padding-bottom: 5rem;
 }
 
-.tirage img {
-    margin: 0.8rem 0.4rem 0rem 0.4rem ;
-    height: 19rem;
-    width: 35.7rem;
-    object-fit: cover;
+.tirage-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18.75rem 18.75rem 18.75rem;
+    gap: 1rem;
 }
 
-.tirage {
-    margin-left: 4.5rem;
-    padding-bottom: 4.7rem;
+.tirage-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18.75rem 18.75rem;
+    gap: 1rem;
 }
 
+.tirage-top img,
+.tirage-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tirage-agrandir {
+    position: relative; /* sert de référence à positon: absolute */
+}
+
+.tirage-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color3);
+    background: black;
+    opacity: 0; /* Cache l'élément */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Pour une transition douce */
+}
+
+.tirage-agrandir:hover .tirage-hover {
+    opacity: 0.7; /* Fais apparaître l'élément avec une opacité de 70% */
+}

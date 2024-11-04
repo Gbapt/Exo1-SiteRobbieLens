@@ -1,6 +1,6 @@
 .intro, .formulaire { 
-    background-color: #1f2039;
-    color: white;
+    background: var(--color1);
+    color: var(--color3);
 }
 
 .intro {
@@ -28,7 +28,7 @@ h1 {
 h1,
 h3 {
     font-family: "Montserrat", sans-serif;
-    color: #a5b4fc;
+    color: var(--color2);
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 
 em {
     font-style: normal;
-    color: #a5b4fc;
+    color: var(--color2);
 }
 
 .boutton {
