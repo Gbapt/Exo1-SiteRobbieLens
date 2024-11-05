@@ -1,4 +1,4 @@
-section {
+.a-propos {
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -7,11 +7,13 @@ section {
     color: var(--color3);
 }
 
-h1 {
+.a-propos h1 {
     font-family: "Montserrat", sans-serif;
     color: var(--color2);
     margin-bottom: 0;
     padding-top: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
 }
 
 .a-propos-entete {
@@ -38,7 +40,7 @@ ul {
     font-size: 1.1rem;
 }
 
-.boutton {
+.bouton {
     font-size: 0.95rem;
     padding: 1.4rem 1.6rem;
 }
@@ -79,4 +81,12 @@ th:nth-child(2), td:nth-child(2) {
 
 th:nth-child(3), td:nth-child(3) {
     width: 30%; /* Troisième colonnes plus étroites */
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1042px) {
+    table {
+        display: none; /* supprime le tableau affichant les tarifs */
+    }
 }

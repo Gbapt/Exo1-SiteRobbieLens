@@ -9,13 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 5rem 28rem;
-}
-
-.intro p {
-    margin-bottom: 3rem;
-    margin-top: 0;
-    max-width: 30rem;
-    min-width: 30rem;
+    gap: 4rem;
 }
 
 h1 {
@@ -23,6 +17,14 @@ h1 {
     margin-bottom: 1rem;
     font-weight: 500;
     font-size: 3.5rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    max-width: 31rem;
+    min-width: 31rem;
 }
 
 h1,
@@ -33,6 +35,7 @@ h3 {
 
 h2 {
     margin: 3em;
+    text-align: center;
 }
 
 em {
@@ -40,8 +43,8 @@ em {
     color: var(--color2);
 }
 
-.boutton {
-    padding: 1rem 1.5rem;
+.bouton {
+    padding: 1.2rem 1.8rem;
 }
 
 .extrait {
@@ -65,8 +68,8 @@ h3 {
     padding: 4rem 0;
 }
 
-label {
-    width: 26vw;
+.formulaire label {
+    min-width: 31rem;
 }
 
 .form-header {
@@ -119,3 +122,58 @@ input {
     padding: 1rem;
 }
 
+
+/* RESPONSIVE */
+@media screen and (max-width: 1042px) {
+
+    .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .intro img, 
+    .extrait img {
+        padding: 0 1.5rem;
+    }
+
+    .intro img {
+        width: 100%;
+    }
+
+    h1, .intro p {
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        margin-bottom: 3rem;
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    .intro .bouton {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 15.65rem;
+    }
+
+    .photo-du-haut,
+    .photo-du-bas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-header {
+        flex-direction: column;
+    }
+
+    .formulaire label {
+        min-width: 93.4vw;
+    }
+}
