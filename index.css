@@ -36,6 +36,7 @@ h3 {
 h2 {
     margin: 3em;
     text-align: center;
+    font-weight: 500;
 }
 
 em {
@@ -129,7 +130,8 @@ input {
     .intro {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 5rem 0;
+        padding: 3.2rem 0;
+        gap: 1.2rem;
     }
 
     .intro img, 
@@ -160,6 +162,10 @@ input {
         justify-content: center;
         margin: 0 auto;
         max-width: 15.65rem;
+    }
+
+    h2 {
+        margin-top: 1.5rem;
     }
 
     .photo-du-haut,
